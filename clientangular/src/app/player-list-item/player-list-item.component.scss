@@ -1,0 +1,17 @@
+@import "../../themes/darktheme.scss";
+.profilePicture{
+	border-radius: 100%;
+	height: 40px;
+	width: 40px;
+	user-select: none;
+}
+.playerListItem{
+	user-select: none;
+}
+.playerListItem:hover{
+	background-color:$playerSelectedBackground;
+	cursor: pointer;
+}
+.playerListItem.clicked{
+	background-color:$playerSelectedBackground;
+}

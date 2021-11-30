@@ -1,0 +1,53 @@
+@import "../../themes/darktheme.scss";
+.globalHeader{
+	background-color: $dark;
+	color:$text;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 40px;
+	width: 100%;
+}
+.headerlink{
+	position: relative;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	border-radius: 40%;
+	height: 25px;
+	user-select: none;
+	background-color: $light;
+	vertical-align: top;
+	
+}
+.headerlink:hover{
+	position: relative;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	border-radius: 40%;
+	height: 25px;
+	cursor:pointer;
+	background-color: $lighter;
+}
+.right{
+	position: absolute;
+	display: inline-block;
+	right: 0px;
+}
+.globalHeader .size{
+	display: inline-block;
+	width: 13%;
+}
+.profile{
+	position: absolute;
+	height: 40px;
+	border-radius: 100%;
+	right: 13%;
+}

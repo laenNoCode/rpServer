@@ -1,0 +1,12 @@
+@import "../themes/darktheme.scss";
+.mainscreen{
+	position: fixed;
+	height: calc(100% - 40px);
+	top:40px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	left:0;
+	color: $text;
+	z-index: 1;
+}

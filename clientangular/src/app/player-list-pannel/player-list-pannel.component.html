@@ -1,0 +1,3 @@
+<div class="playerListPannel">
+	<app-player-list-item *ngFor="let player of players; let i = index" [player]="player" [selected]="playerPanelsClicked[i]" (clickedEvent)="onChildrenClick(i)"></app-player-list-item>
+</div>

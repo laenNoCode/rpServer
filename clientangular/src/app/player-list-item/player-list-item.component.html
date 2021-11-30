@@ -1,0 +1,6 @@
+<div class="playerListItem" (click)="clicked()" [ngClass]="{'clicked':selected}">
+	<span>
+		<img [src]="player.profilePictureURL" [alt]="'player ' + player.name + ' profile picture'" class="profilePicture"/>
+	</span>
+	<span style="position:relative; top:-15px">{{player.name}}</span>
+</div>
