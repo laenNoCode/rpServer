@@ -1,10 +1,8 @@
 <div class="dropdown-container">
 	<span class="dropdown-top">{{label}}</span>
 	<div class="dropdown-bot">
-		<div *ngFor="let element of elements" class="link"> 
-			<a [href]="element.url">
+		<div *ngFor="let element of elements" [routerLink]="element.url" class="link"> 
 			{{element.name}}
-			</a>
 		</div>
 	</div>
 </div>

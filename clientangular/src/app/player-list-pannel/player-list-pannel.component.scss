@@ -1,4 +1,74 @@
 @import "../../themes/darktheme.scss";
 .playerListPannel{
 	background-color:$playerBackground;
+	position: absolute;
+	right:40px;
+	display: inline-block;
+	overflow-y: auto;
+	height: fit-content;
+	max-height: 100%;
+	animation: appear 1s;
+	width: 92%;
+}
+.hideToggle{
+	background-color: lightgray;
+	display: inline-block;
+	position: absolute;
+	margin-left: 0%;
+	padding-left: 5%;
+	font-size: 20px;
+	right: 0px;
+	width: 8%;
+	user-select: none;
+	color: black;
+	border-bottom-left-radius: 40%;
+	border-top-left-radius: 40%;
+	border-bottom-right-radius: 100%;
+	border-top-right-radius: 100%;
+	animation: rotateLeft 1s;
+	transform: rotate(0deg);
+}
+.rotated{
+	animation: rotateRight 1s;
+	transform: rotate(180deg);
+	
+}
+.hidden{
+	width: 0%;
+	animation: hide 1s;
+}
+.hideToggle:hover{
+	cursor: pointer;
+}
+@keyframes rotateRight {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(180deg);
+	}
+}
+@keyframes rotateLeft {
+	from{
+		transform: rotate(180deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+@keyframes hide{
+	from{
+		width: 100%;
+	}
+	to{
+		width: 0%;
+	}
+}
+@keyframes appear{
+	from{
+		width: 0%;
+	}
+	to{
+		width: 100%;
+	}
 }

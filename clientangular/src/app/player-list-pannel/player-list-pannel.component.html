@@ -1,3 +1,4 @@
-<div class="playerListPannel">
+<div (click)="toggleHide()" class="hideToggle" [ngClass]="{'rotated': hidden}">&gt;</div>
+<div class="playerListPannel" [ngClass]="{'hidden':hidden}">
 	<app-player-list-item *ngFor="let player of players; let i = index" [player]="player" [selected]="playerPanelsClicked[i]" (clickedEvent)="onChildrenClick(i)"></app-player-list-item>
 </div>

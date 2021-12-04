@@ -9,6 +9,7 @@ import "../player-list-item/player-list-item.component"
 export class PlayerListPannelComponent implements OnInit, OnChanges {
   @Input() players : Array<Player> = [];
   playerPanelsClicked : Array<Boolean> = []
+  hidden : boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -30,5 +31,8 @@ export class PlayerListPannelComponent implements OnInit, OnChanges {
     } 
     this.playerPanelsClicked[index] = true;
     console.log(index + " clicked")
+  }
+  toggleHide() : void{
+    this.hidden = ! this.hidden;
   }
 }
